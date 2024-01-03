@@ -1,0 +1,375 @@
+@import url(./variable.css);
+@import url(./media-query.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-grey-2);
+}
+
+/* header */
+
+header .head-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  position: fixed;
+  width: 100%;
+  height: 76px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  z-index: 999;
+  top: 0;
+}
+
+.logo a {
+  height: 186px;
+  width: 198px;
+  padding: 0 20px;
+}
+
+.logo svg {
+  width: 70%;
+  height: 40px;
+}
+
+.location {
+  padding: 0px 0px;
+  width: 208px;
+}
+
+.location .location-title {
+  font-size: 16px;
+  font-weight: var(--fw-800);
+  margin-bottom: 0px;
+  letter-spacing: 0.2px;
+}
+
+.location .location-addr {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.search-bar {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 5px;
+  background: var(--color-grey-2);
+  color: var(--color-grey);
+  box-shadow: none;
+  width: 52%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 13px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 20px;
+}
+
+.search-bar input {
+  border: 0px;
+  outline: 0;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.search-bar .search-anime {
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  animation: 15000ms ease 0s infinite normal forwards running sea;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(153, 153, 153);
+  margin-top: 14px;
+}
+
+#animationText-1 {
+  animation-delay: 0ms;
+}
+
+.search-bar #animationText-2 {
+  animation-delay: 1500ms;
+}
+
+.search-bar #animationText-3 {
+  animation-delay: 3000ms;
+}
+
+.search-bar #animationText-4 {
+  animation-delay: 4500ms;
+}
+
+.search-bar #animationText-5 {
+  animation-delay: 6000ms;
+}
+
+.search-bar #animationText-6 {
+  animation-delay: 7500ms;
+}
+
+.search-bar #animationText-7 {
+  animation-delay: 9000ms;
+}
+
+.search-bar #animationText-8 {
+  animation-delay: 10500ms;
+}
+
+.search-bar #animationText-9 {
+  animation-delay: 12000ms;
+}
+
+.search-bar #animationText-10 {
+  animation-delay: 13500ms;
+}
+
+@keyframes sea {
+  0% {
+    top: 100%;
+    visibility: visible;
+  }
+
+  10% {
+    top: 0px;
+  }
+
+  20% {
+    top: -100%;
+    visibility: hidden;
+  }
+
+  100% {
+    top: 100%;
+    visibility: hidden;
+  }
+}
+
+.search-bar .fa-magnifying-glass {
+  width: 13px;
+  color: var(--color-black);
+}
+
+.login {
+  font-size: 15px;
+  color: var(--color-grey);
+}
+
+.my-cart {
+  padding: 0px 18px;
+  width: 14%;
+}
+
+.my-cart button {
+  padding: 10px 8px;
+  border-radius: 7px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font-size: 14px;
+  font-weight: var(--fw-700);
+  width: 75%;
+  border: none;
+}
+
+/* main section starts */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 76px;
+}
+
+.main-container {
+  max-width: 1100px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner-2 {
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  margin: 0px 14px;
+}
+
+.banner-2 .banner-img img {
+  height: 165px;
+  width: 285px;
+}
+
+.banner-2::-webkit-scrollbar {
+  display: none;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+}
+
+.items .item img {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-name {
+  font-weight: var(--fw-800);
+}
+
+.category-title a {
+  color: var(--color-green);
+  text-decoration: none;
+}
+
+.category-list {
+  max-width: 100%;
+  max-height: 350px;
+  margin-top: 23px;
+  overflow: auto hidden;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+  column-gap: 20px;
+  margin-left: -11px;
+}
+
+.category-list::-webkit-scrollbar {
+  display: inline;
+}
+
+.category-list .item {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  align-items: center;
+  column-gap: 10px;
+  border: 0.5px solid rgb(232, 232, 232);
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+  border-radius: 8px;
+  padding-right: 18px;
+}
+
+.item-image img {
+  width: 167px;
+}
+
+.item-detail .timer {
+  font-size: 8px;
+  font-weight: bolder;
+  background-color: var(--color-grey-2);
+  width: 33%;
+  padding: 5px;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  padding: 0px 10px;
+  padding-bottom: 16px;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: var(--fw-800);
+}
+
+.item-weight {
+  color: var(--color-grey);
+  font-size: 10px;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  font-weight: var(--fw-800);
+  align-items: center;
+}
+
+.item-price .price {
+  font-size: 10px;
+  font-weight: var(--fw-800);
+}
+
+.item-price button {
+  font-size: 10px;
+  font-weight: var(--fw-800);
+  text-transform: uppercase;
+  padding: 3px 9px;
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+  border-radius: 3px;
+  background-color: var(--color-lighest-green);
+}
+
+footer {
+  color: var(--color-grey);
+}
+.footer-container {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  gap: 50px;
+  padding-bottom: 120px;
+}
+
+.useful-links {
+  margin-left: 90px;
+}
+
+.useful-links p {
+  font-size: 19px;
+  font-weight: var(--fw-700);
+  margin-left: 4px;
+  color: var(--color-black);
+  padding-bottom: 20px;
+}
+
+.useful-link-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 18px 24px;
+}
+
+.useful-link-1 li {
+  list-style: none;
+  padding: 2px 5px;
+}
+
+.categories-footer table td {
+  padding: 5px 20px;
+}
+
+.footer-title-2 p {
+  margin-left: 20px;
+  color: var(--color-black);
+  font-size: 19px;
+  font-weight: var(--fw-700);
+  padding-bottom: 20px;
+}
