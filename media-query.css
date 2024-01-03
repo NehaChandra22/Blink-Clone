@@ -1,4 +1,4 @@
-/* media queries */
+ /* media queries */
 
 @media screen and (max-width: 1020px) {
   .location {
@@ -8,19 +8,7 @@
     display: none;
   }
   header .head-container .my-cart {
-    padding: 0px 0px;
-    width: 20%;
-  }
-
-  .my-cart button {
-    padding: 2px 4px;
-    border-radius: 20px;
-    color: var(--color-white);
-    background-color: var(--color-green);
-    font-size: 6px;
-    font-weight: var(--fw-700);
-    width: 54%;
-    border: none;
+    display: none;
   }
 
   .logo a {
@@ -33,7 +21,7 @@
     width: 40%;
   }
   .main-container {
-    width: 619px;
+    width: 444px;
   }
   .footer-container {
     display: flex;
@@ -79,21 +67,20 @@
     column-gap: 20px;
     margin-left: -11px;
   }
-  
+
   .category-list::-webkit-scrollbar {
     display: inline;
   }
-  
-  .category-list .item {
-    width: 21%;
-    height: 260px;
-     
+
+  .categories .category-list .item {
+    width: 100%;
+    height: 200px;
   }
-  
+
   .category-list .item-image img {
-    width: 120px;
+    width: 80px;
   }
-  
+
   .category-list .item-detail .timer {
     font-size: 8px;
     font-weight: bolder;
@@ -101,13 +88,31 @@
     width: 29%;
     padding: 0px;
   }
-  
+
   .item-detail {
     display: flex;
     flex-direction: column;
     row-gap: 0px;
-    padding: 0px 10px;
-    padding-bottom: 16px;
+    padding: 0px 6px;
   }
+  .category-list .item-detail .item-name {
+    font-size: 9px;
   }
 
+  .category-list .item-detail .item-price .price {
+    font-size: 10px;
+    font-weight: var(--fw-800);
+  }
+
+  .category-list .item-detail .item-price button {
+    font-size: 8px;
+    font-weight: var(--fw-800);
+    text-transform: uppercase;
+    padding: 3px 11px;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 3px;
+    background-color: var(--color-lighest-green);
+    margin-right: -19px;
+  }
+}
