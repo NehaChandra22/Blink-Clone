@@ -10,6 +10,9 @@
   header .head-container .my-cart {
     display: none;
   }
+ .my-cart{
+    display: none;
+}
 
   .logo a {
     height: 6px;
